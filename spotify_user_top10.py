@@ -3,10 +3,10 @@ import json
 import spotipy
 import spotipy.util as util
 
+#Spotify username
 username = ''
 
-
-#Enter credentials here
+#Enter API credentials here
 scope = 'user-read-recently-played user-top-read user-read-playback-state'
 client_id = ''
 client_secret = ''
@@ -30,8 +30,7 @@ except:
             redirect_uri=redirect_uri
             )
 
-# Create our Spotify Object
-spotifyObject = spotipy.Spotify(auth=token)
+spotifyObject = spotipy.Spotify(auth=token) # spotify object
 
 user = spotifyObject.current_user()
 

@@ -56,20 +56,20 @@ for range in ranges:
     topArtists = spotifyObject.current_user_top_artists(limit,0,range)
 
     if range == 'short_term':
-        print('Top ' + str(limit) + ' Artists (Past Month)')
+        print('Top ' + str(limit) + ' Artists (Short Term)')
     if range == 'medium_term':
-        print('Top ' + str(limit) + ' Artists (Past 6 Months)')
+        print('Top ' + str(limit) + ' Artists (Medium Term)')
     if range == 'long_term':
-        print('Top ' + str(limit) + ' Artists (Past Year)')
+        print('Top ' + str(limit) + ' Artists (Long Terms)')
     compile_list(**topArtists)
 
 for range in ranges:
     topTracks = spotifyObject.current_user_top_tracks(limit,0,range)
 
     if range == 'short_term':
-        print('Top ' + str(limit) + ' Tracks (Past Month)')
+        print('Top ' + str(limit) + ' Tracks (Short Term)')
     if range == 'medium_term':
-        print('Top ' + str(limit) + ' Tracks (Past 6 Months)')
+        print('Top ' + str(limit) + ' Tracks (Medium Term)')
     if range == 'long_term':
-        print('Top ' + str(limit) + ' Tracks (Past Year)')
+        print('Top ' + str(limit) + ' Tracks (Long Terms)')
     compile_list(**topTracks)

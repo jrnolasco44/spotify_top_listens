@@ -1,4 +1,4 @@
 # spotify_top_listens
 
-## Example
+### Example
 ![Screenshot](spotify_top10_example.PNG)
